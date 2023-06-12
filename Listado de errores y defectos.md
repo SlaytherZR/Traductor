@@ -27,6 +27,8 @@
 ### Defectos de seguridad 
 - El codigo no esta ofuscado, por lo tanto, es facil acceder al código fuente en a la hora de descompilar el ejecutable.
 
+---
+
 ## Mantenimiento 
 ### Perfectivo 
 - Colocar una interfaz más amigable.
