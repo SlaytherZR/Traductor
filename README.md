@@ -1,18 +1,28 @@
-## Getting Started
+# Lista de errores y defectos
+## Prueba predefinida
+- Entrada: 7, Salida: kanchis -- CORRECTO
+- Entrada: 59. Salida: pichka chunka iskun -- CORRECTO
+- Entrada: 864. Salida: pusak patsak sukta chunka chusku -- CORRECTO
+- Entrada: 3201. Salida: kimsa waranka ishkay patsak shuk -- CORRECTO
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Prueba exploratoria 
+- Entrada: 100, Salida: patsak -- INCORRECTO (resultado: chunka patsak)
+- Entrada: 10, Salida: chunka-- INCORRECTO (resultado: chunka chunka)
+- Entrada: 20, Salida: ishkay chunka -- CORRECTO
 
-## Folder Structure
+---
+### Errores de codificación 
+- La excepción no se completa. Es necesario colocar un *try()* para instanciar el lector de datos de entrada.
 
-The workspace contains two folders by default, where:
+### Defectos de funcionamiento 
+- Las siguientes impresiones son incorrectas. Por lo tanto, existen inconsistencia en los resultados.
+	-  Entrada: 100, Salida: patsak -- INCORRECTO (resultado: chunka patsak)
+	-  Entrada: 10, Salida: chunka-- INCORRECTO (resultado: chunka chunka)
+	
+### Defectos de usabilidad
+- Navegación confusa en terminal.
+- Falta de retroalimentación.
+- No se presenta interfaz gráfica amigable con el usuario.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### Defectos de seguridad 
+- El codigo no esta ofuscado, por lo tanto, es facil acceder al código fuente en a la hora de descompilar el ejecutable.
