@@ -28,8 +28,6 @@
 - El codigo no esta ofuscado, por lo tanto, es facil acceder al código fuente en a la hora de descompilar el ejecutable.
 
 ## Mantenimiento 
-### Adaptativo 
-- 
 ### Perfectivo 
 - Colocar una interfaz más amigable.
 - Devolver una mejor retroalimentación que evite que el usuario se confunda con la salida del programa.
