@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class App {
 
     public static void main(String[] args) throws NumeroFueraDeRango {
-            Scanner input = new Scanner(System.in);
-            System.out.print("Ingrese un numero entre 0 - 9999:  ");
-            int numero = input.nextInt();
-            if (!(numero >= 0 && numero <= 9999)) {
-                throw new NumeroFueraDeRango("Número fuera de rango");
-            }
-            System.out.println(traducirNumero(numero));
+        Scanner input = new Scanner(System.in);
+        System.out.print("Ingrese un numero entre 0 - 9999:  ");
+        int numero = input.nextInt();
+        if (!(numero >= 0 && numero <= 9999)) {
+            throw new NumeroFueraDeRango("Número fuera de rango");
+        }
+        System.out.println(traducirNumero(numero));
 
 
     }
@@ -26,13 +26,26 @@ public class App {
         int mil = (numero / 1000) % 10;
         String resultado = "";
         if (mil > 0) {
+            if (numero==1000){
+                resultado = "waranka";
+            }else {
             resultado += decenas[mil] + " waranka ";
+
+            }
         }
         if (centena > 0) {
-            resultado += decenas[centena] + " patsak ";
+            if (numero == 100) {
+                resultado = "patsak";
+            } else {
+                resultado += decenas[centena] + " patsak ";
+            }
         }
         if (decena > 0) {
-            resultado += decenas[decena] + " " + "chunka ";
+            if (numero == 10) {
+                resultado += decenas[decena];
+            } else {
+                resultado += decenas[decena] + " " + "chunka ";
+            }
         }
         if (unidad > 0) {
             resultado += unidades[unidad];
