@@ -12,7 +12,7 @@
 
 ---
 ### Errores de codificación 
-No se encontraron errores de codificación.
+- No se encontraron errores de codificación.
 
 ### Defectos de funcionamiento 
 - Revisar en casos de prueba.
