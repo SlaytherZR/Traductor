@@ -39,8 +39,9 @@ public class App {
     }
 
 
-
     // Metodo para traducir el numero
+
+
     public static String traducirNumero(int numero) {
 
         String[] unidades = {"", "shuk", "ishkay", "kimsa", "chusku", "pichka", "sukta", "kanchis", "pusak", "iskun"};
@@ -54,37 +55,38 @@ public class App {
         String resultado = "";
         // Agregando al resultado el numero traducido correspondiente a la cantidad de
         // miles
+// Agregando al resultado el numero traducido correspondiente a la cantidad de miles
         if (mil > 0) {
-            if (numero == 1000) {
-                resultado = "waranka";
+            if (mil == 1) {
+                resultado += "waranka ";
             } else {
                 resultado += decenas[mil] + " waranka ";
-
             }
         }
-        // Agregando al resultado el numero traducido correspondiente a la cantidad de
-        // centenas
+
+// Agregando al resultado el numero traducido correspondiente a la cantidad de centenas
         if (centena > 0) {
-            if (numero == 100) {
-                resultado = "patsak";
+            if (centena == 1) {
+                resultado += "patsak ";
             } else {
                 resultado += decenas[centena] + " patsak ";
             }
         }
-        // Agregando al resultado el numero traducido correspondiente a la cantidad de
-        // decenas
+
+// Agregando al resultado el numero traducido correspondiente a la cantidad de decenas
         if (decena > 0) {
-            if (numero == 10) {
-                resultado += decenas[decena];
+            if (decena == 1) {
+                resultado += "chunka ";
             } else {
-                resultado += decenas[decena] + " " + "chunka ";
+                resultado += decenas[decena] + " chunka ";
             }
         }
-        // Agregando al resultado el numero traducido correspondiente a la cantidad de
-        // unidades
+
+// Agregando al resultado el numero traducido correspondiente a la cantidad de unidades
         if (unidad > 0) {
             resultado += unidades[unidad];
         }
+
         // Concatenando el resultado
         return resultado.trim();
     }
