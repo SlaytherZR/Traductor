@@ -21,7 +21,7 @@
 - No se presenta interfaz gráfica amigable con el usuario al ingresar número no permitidos.
 
 ### Defectos de seguridad 
-- El codigo no esta ofuscado, por lo tanto, es facil acceder al código fuente en a la hora de descompilar el ejecutable.
+- El codigo no esta ofuscado, por lo tanto, es fácil acceder al código fuente en a la hora de descompilar el ejecutable.
 
 ---
 
@@ -31,7 +31,7 @@
 - Devolver una mejor retroalimentación en caso de ingresar número no permitidos.
 
 ### Aditivo
-- Agregar la funcionalidad de seguir ingresando numeros después de cada impresión sin tener que volver a ejecutar el programa.
+- Agregar la funcionalidad de seguir ingresando números después de cada impresión sin tener que volver a ejecutar el programa.
 
 ### Correctivo 
 - Solucionar el error en la impresión con respecto a los errores de funcionamiento. 
